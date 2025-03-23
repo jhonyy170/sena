@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos de Bases de Datos</title>
+    <link rel="stylesheet" href="destino.css">
+</head>
+<body>
+
+    <h1>SERVICIO NACIONAL DE APRENDIZAJE - SENA</h1>
+    <h2>Centro de Comercio y Servicios</h2>
+    <p><strong>Competencia:</strong> Atender requerimientos de los clientes de acuerdo con procedimiento técnico y normativa de procesos de negocios.</p>
+
+    <div class="section">
+        <h2>1. Conceptos de Bases de Datos</h2>
+        <p>Una base de datos es un sistema que almacena datos organizados y relacionados entre sí para facilitar su acceso y gestión.</p>
+        <p>Desde el punto de vista informático, está compuesta por tablas que contienen columnas (atributos) y filas (registros).</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Características de una Base de Datos</h2>
+        <ul>
+            <li>Independencia lógica y física de los datos.</li>
+            <li>Redundancia mínima.</li>
+            <li>Acceso concurrente para múltiples usuarios.</li>
+            <li>Integridad de los datos.</li>
+            <li>Consultas complejas optimizadas.</li>
+            <li>Seguridad de acceso y auditoría.</li>
+            <li>Respaldo y recuperación.</li>
+            <li>Compatibilidad con lenguajes estándar.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Ventajas de las Bases de Datos</h2>
+        <h3>Control sobre la redundancia de datos</h3>
+        <p>Evita el almacenamiento innecesario de datos repetidos, optimizando el uso del espacio y mejorando la consistencia.</p>
+
+        <h3>Consistencia de datos</h3>
+        <p>Reduciendo la redundancia, se minimiza el riesgo de inconsistencias en la información almacenada.</p>
+
+        <h3>Compartición de datos</h3>
+        <p>Permite que múltiples usuarios accedan a la base de datos simultáneamente con los permisos adecuados.</p>
+
+        <h3>Mantenimiento de estándares</h3>
+        <p>Facilita el cumplimiento de estándares nacionales e internacionales en almacenamiento y gestión de datos.</p>
+
+        <h3>Seguridad e integridad</h3>
+        <p>Garantiza la validez y seguridad de los datos mediante restricciones y permisos de acceso.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Desventajas de las Bases de Datos</h2>
+        <h3>Complejidad</h3>
+        <p>El uso de un SGBD requiere conocimientos técnicos avanzados para su correcta implementación y mantenimiento.</p>
+
+        <h3>Coste del equipamiento adicional</h3>
+        <p>El almacenamiento de grandes volúmenes de datos puede requerir hardware más potente y costoso.</p>
+
+        <h3>Vulnerabilidad ante fallos</h3>
+        <p>Al centralizar los datos en un sistema, un fallo puede afectar toda la base de datos, por lo que se recomienda el uso de backups.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Sistema de Gestión de Base de Datos (SGBD)</h2>
+        <p>Un SGBD es un software especializado que gestiona el almacenamiento, manipulación y consulta de bases de datos.</p>
+        <p>Se dividen en:</p>
+        <ul>
+            <li><strong>Relacionales (SQL):</strong> Organizan la información en tablas y establecen relaciones entre ellas.</li>
+            <li><strong>No relacionales (NoSQL):</strong> Almacenan datos en estructuras flexibles como documentos o grafos.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Bases de Datos Relacionales</h2>
+        <p>Se basan en el modelo de organización en tablas con relaciones definidas. Sus características principales incluyen:</p>
+        <ul>
+            <li>Atomicidad</li>
+            <li>Consistencia</li>
+            <li>Aislamiento</li>
+            <li>Durabilidad</li>
+        </ul>
+        <p>Ejemplos: MySQL, Oracle, SQL Server, PostgreSQL.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. Bases de Datos No Relacionales</h2>
+        <p>No utilizan identificadores relacionales y almacenan datos en formatos más flexibles como documentos JSON.</p>
+        <p>Ejemplos: MongoDB, Redis, Elasticsearch, Cassandra.</p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de una Base de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>SERVICIO NACIONAL DE APRENDIZAJE - SENA</h1>
+    <h2>Centro de Comercio y Servicios</h2>
+    <p><strong>Competencia:</strong> Atender requerimientos de los clientes de acuerdo con procedimiento técnico y normativa de procesos de negocios.</p>
+
+    <div class="section">
+        <h2>1. Estructura de una Base de Datos</h2>
+        <h3>Campo o Atributo</h3>
+        <p>Unidad básica de entrada de datos en un registro. Cada entrada puede tener múltiples campos de distintos tipos.</p>
+
+        <h3>Registro</h3>
+        <p>Una fila en una base de datos, que contiene datos únicos en cada campo.</p>
+
+        <h3>Dato</h3>
+        <p>Valor que pertenece a un campo dentro de un registro.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Tabla o Entidad</h2>
+        <p>Unidad dentro de una base de datos que contiene atributos que la caracterizan.</p>
+
+        <h3>Relación</h3>
+        <p>Asociación entre entidades que permite definir dependencias y compartir atributos.</p>
+
+        <div class="box">
+            <h4>Tipos de Relaciones</h4>
+            <p><span class="highlight">Uno a Uno (1:1):</span> Un registro de una entidad se asocia solo con un registro de otra.</p>
+            <p><span class="highlight">Uno a Muchos (1:M):</span> Un registro de una entidad se asocia con múltiples registros de otra.</p>
+            <p><span class="highlight">Muchos a Muchos (N:M):</span> Un registro de una entidad puede relacionarse con múltiples registros de otra.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Modelo Entidad Relación</h2>
+        <p>Representación gráfica de las entidades y sus relaciones en una base de datos.</p>
+        <ul>
+            <li><span class="highlight">Entidades:</span> Se representan con un rectángulo.</li>
+            <li><span class="highlight">Atributos:</span> Se representan con círculos o elipses y se conectan a su entidad.</li>
+            <li><span class="highlight">Relaciones:</span> Se representan con un rombo.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Modelo Relacional</h2>
+        <p>Transformación del modelo entidad-relación a una estructura basada en tablas.</p>
+        <ol>
+            <li>Cada entidad se convierte en una tabla con sus atributos como campos.</li>
+            <li>El atributo principal se convierte en <span class="highlight">llave primaria (PK)</span>.</li>
+            <li>Las relaciones se establecen mediante <span class="highlight">llaves foráneas (FK)</span>.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>5. Ejemplo de Base de Datos</h2>
+        <p>Ejemplo de facturación en una tienda:</p>
+        <ul>
+            <li>Un cliente puede tener múltiples facturas.</li>
+            <li>Una factura puede contener varios productos.</li>
+        </ul>
+        <p><strong>Nota:</strong> La relación "Muchos a Muchos" se maneja con una tabla intermedia.</p>
+    </div>
+
+</body>
+</html>
